@@ -1,0 +1,112 @@
+{
+  "target": "PlacementStatus",
+  "features": [
+    "Gender",
+    "City",
+    "CollegeTier",
+    "Stream",
+    "Specialisation",
+    "Hostel",
+    "HistoryOfBacklogs",
+    "SGPA_Sem1",
+    "SGPA_Sem2",
+    "SGPA_Sem3",
+    "SGPA_Sem4",
+    "SGPA_Sem5",
+    "SGPA_Sem6",
+    "SGPA_Sem7",
+    "SGPA_Sem8",
+    "CGPA",
+    "AttendancePercent",
+    "Internships",
+    "Projects",
+    "Workshops",
+    "Certifications",
+    "Publications",
+    "AptitudeTestScore",
+    "SoftSkillsRating",
+    "CodingTestScore",
+    "MockInterviewScore",
+    "ExtraCurricular",
+    "CGPA_Tier"
+  ],
+  "samples": 50000,
+  "train_samples": 40000,
+  "test_samples": 10000,
+  "class_counts": {
+    "0": 17144,
+    "1": 32856
+  },
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9201,
+      "precision": 0.9269,
+      "recall": 0.9536,
+      "f1": 0.9401,
+      "confusion_matrix": [
+        [
+          2935,
+          494
+        ],
+        [
+          305,
+          6266
+        ]
+      ]
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.8899,
+      "precision": 0.8834,
+      "recall": 0.9591,
+      "f1": 0.9197,
+      "confusion_matrix": [
+        [
+          2597,
+          832
+        ],
+        [
+          269,
+          6302
+        ]
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9169,
+      "precision": 0.9234,
+      "recall": 0.9525,
+      "f1": 0.9377,
+      "confusion_matrix": [
+        [
+          2910,
+          519
+        ],
+        [
+          312,
+          6259
+        ]
+      ]
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.9057,
+      "precision": 0.9078,
+      "recall": 0.9533,
+      "f1": 0.93,
+      "confusion_matrix": [
+        [
+          2793,
+          636
+        ],
+        [
+          307,
+          6264
+        ]
+      ]
+    }
+  ],
+  "best_model": "Logistic Regression",
+  "best_accuracy": 0.9201
+}
